@@ -1,0 +1,34 @@
+<template>
+  <link rel="shortcut icon" href="hacker.png" type="image/x-icon">
+  
+  <div class="main">
+    <div class="section" id="hacker-news">
+      <h1 class="title">${hnTitle}</h1>
+      <ul class="entries">
+        <li class="entry" repeat.for="entry of hnEntries">
+          <a href="${entry.link}">
+            <h2 class="entry-title">
+              ${entry.title}
+            </h2>
+            <p class="pub-date">${entry.date}</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="section" id="netsec">
+      <h1 class="title">${nsTitle}</h1>
+      <ul class="entries">
+        <li class="entry" repeat.for="entry of nsEntries">
+          <a href="${entry.link}">
+            <h2 class="entry-title">
+              ${entry.title}
+            </h2>
+            <p class="pub-date">${entry.date}</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="./switch.js"></script>
+</template>
+

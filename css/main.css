@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0C0C0C;
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+body .main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 10px;
+}
+
+body .main .hide-section {
+  background-color: #fff;
+}
+
+body .main .section .title {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+body .main .section .entries {
+  margin: 0;
+  padding: 0;
+}
+
+body .main .section .entries .entry {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
+  background-color: #654597;
+}
+
+body .main .section .entries .entry a {
+  padding: 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+body .main .section .entries .entry a .entry-title {
+  margin: 0;
+  font-weight: 400;
+}
+
+body .main .section .entries .entry a .pub-date {
+  margin: 0;
+  font-weight: 300;
+}
+
+body .main .section .entries .entry a:focus {
+  outline: none;
+}
+
+body .main .section .entries .entry a:visited {
+  color: #AB81CD;
+}
+
+body .main .section .entries .entry:hover {
+  background-color: #574AE2;
+}
+/*# sourceMappingURL=main.css.map */
