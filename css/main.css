@@ -3,9 +3,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
   color: white;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   overflow-x: hidden;
 }
 
@@ -18,12 +18,8 @@ body .main {
   padding: 0 10px;
 }
 
-body .main .hide-section {
-  background-color: #fff;
-}
-
 body .main .section .title {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   text-align: center;
   color: white;
   text-transform: uppercase;
@@ -66,10 +62,16 @@ body .main .section .entries .entry a:focus {
 }
 
 body .main .section .entries .entry a:visited {
-  color: #AB81CD;
+  color: #ab81cd;
 }
 
 body .main .section .entries .entry:hover {
-  background-color: #574AE2;
+  background-color: #574ae2;
+}
+
+@media screen and (max-width: 700px) {
+  body .main {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

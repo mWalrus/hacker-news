@@ -3,7 +3,7 @@
   
   <div class="main">
     <div class="section" id="hacker-news">
-      <h1 class="title">${hnTitle}</h1>
+      <h1 class="title" click.delegate="delegate">${hnTitle}</h1>
       <ul class="entries">
         <li class="entry" repeat.for="entry of hnEntries">
           <a href="${entry.link}">
